@@ -1,6 +1,5 @@
 # Referências e fontes
 
-
 > Parte da documentação de referência do projeto. Para marcar o que já foi feito, use `PROGRESS.md` (veja o [README](../README.md)).
 
 Páginas consultadas na pesquisa original (acesso em outubro de 2026).
@@ -63,3 +62,7 @@ Páginas consultadas na pesquisa original (acesso em outubro de 2026).
 
 - [JLCPCB](https://jlcpcb.com): parâmetros usados em [PCB](04-pcb-order.md)
 - [Gerber v2.0.1 oficial (zip topo)](https://github.com/josefadamcik/SofleKeyboard/releases/download/v2.0.1/v2-gerber-top.zip)
+
+---
+
+← [Solução de problemas](09-troubleshooting.md) · [Índice](../README.md#documentação)

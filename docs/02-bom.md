@@ -1,6 +1,5 @@
 # Lista de materiais (BOM)
 
-
 > Parte da documentação de referência do projeto. Para marcar o que já foi feito, use `PROGRESS.md` (veja o [README](../README.md)).
 
 Para as duas metades do Sofle v2 padrão (sem RGB), conforme o [guia oficial](https://josefadamcik.github.io/SofleKeyboard/build_guide.html) e a [página de compra de peças](https://josefadamcik.github.io/SofleKeyboard/sourcing_parts.html):
@@ -30,6 +29,20 @@ Para as duas metades do Sofle v2 padrão (sem RGB), conforme o [guia oficial](ht
 | Tampa de acrílico para OLED | 2 | Opcional; a v2 não tem arquivo oficial de tampa | — |
 
 Dica: com exceção dos encoders e knobs, as peças são as mesmas do Lily58, então kits de peças do Lily58 servem.
+
+## O que muda neste projeto
+
+A tabela acima segue o guia oficial do Sofle. Nesta montagem, alguns itens são diferentes:
+
+| Item da tabela | Neste projeto |
+| --- | --- |
+| PCB | JLCPCB, FR-4 2 camadas 1,6 mm, LeadFree HASL, máscara preta ([pedido](04-pcb-order.md)) |
+| Placas de topo e fundo (FR4/acrílico/alumínio) | **Não são compradas**: a placa de switches e o fundo (tray) são impressos em 3D ([impressão](05-3d-printing.md)) |
+| Switches | MX táteis Brown de marca genérica, de 3 ou 5 pinos ([switches](08-switches-keycaps.md)) |
+| Keycaps | Kit XDAL (perfil uniforme baixo, família XDA), com as teclas de polegar de 1.5u impressas em 3D ([`hardware/keycaps/`](../hardware/keycaps/)) |
+| Knob para encoder | Impresso em 3D, adaptado ao eixo Plum 15 mm do EC11 ([`hardware/knob-plum/`](../hardware/knob-plum/)) |
+| Pés de borracha | Pés de 8 mm impressos em TPU (veja abaixo) |
+| Espaçadores M2 | 8 mm (vão entre a PCB e a placa de switches) |
 
 **Sobre os links:** "Produto da lista oficial" são os anúncios usados e indicados pelo criador do Sofle na [página de compra de peças](https://josefadamcik.github.io/SofleKeyboard/sourcing_parts.html). Eles foram publicados há alguns anos e podem estar indisponíveis ou exigir login. "Buscar" abre uma busca no AliExpress com os termos certos. Antes de comprar, confira a especificação do anúncio com a tabela acima.
 
@@ -67,3 +80,7 @@ Kits completos são raros no varejo nacional; o caminho mais comum é comprar PC
 - **Switches e keycaps:** comunidades e lojas de teclados mecânicos nacionais vendem switches MX e keycaps; confirme que os keycaps tenham duas 1.5u ou use só 1u.
 - **Impostos:** compras internacionais pagam imposto de importação e ICMS; verifique as regras vigentes antes de dividir ou juntar pedidos.
 - **Dica de primeira montagem:** prefira um MCU RP2040 compatível com Pro Micro (USB-C, menos frágil) e use sockets — facilita trocar o controlador se algo der errado.
+
+---
+
+← [Visão geral](01-overview.md) · [Índice](../README.md#documentação) · [Ferramentas](03-tools.md) →

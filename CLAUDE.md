@@ -9,6 +9,8 @@ Repositório oficial de montagem de um teclado split **Sofle v2.0.1 (sem RGB)**,
 - `docs/` é só referência; nunca registre progresso ali. Progresso fica em `PROGRESS.md` local (copiado de `progress/PROGRESS.template.md`, ignorado pelo git). Itens novos de checklist vão no template.
 - Nomes de pastas/arquivos em inglês; conteúdo em português.
 - `hardware/case-pehmis/` é cópia de terceiros (CC BY-NC-SA 4.0, commit 1435ee8): não editar.
+- `hardware/keycaps/keycap-1.5u.3mf` é de terceiros (Vostok Labs, CC BY-NC-ND 4.0, sem derivados): não editar.
+- Fotos ficam em `media/photos/` (nomes em inglês, ordem cronológica) e as imagens do Instagram (post, antes e depois) em `media/instagram/`, gerada por `scripts/generate_instagram_post.py`. `archive/` guarda material antigo só como registro; não consulte nem atualize.
 - A placa de switches é gerada por `scripts/generate_switch_plate.py` a partir do Gerber do topo; não edite os 3MF à mão.
 
 ## Decisões de projeto

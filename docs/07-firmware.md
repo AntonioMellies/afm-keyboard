@@ -1,6 +1,5 @@
 # Firmware
 
-
 > Parte da documentação de referência do projeto. Para marcar o que já foi feito, use `PROGRESS.md` (veja o [README](../README.md)).
 
 O Sofle v2 com fio usa QMK, cujo suporte já está no repositório oficial; para remapear sem recompilar, use a keymap `via` (app VIA) ou um build Vial.
@@ -27,3 +26,7 @@ O Sofle v2 com fio usa QMK, cujo suporte já está no repositório oficial; para
 **Drivers no Windows:** o bootloader precisa aparecer como **"Dispositivo Serial USB"** com provedor **Microsoft**. O driver antigo da Arduino (`arduino.inf`, versão 1.2.3.0 de 2015) causa erros `ser_send(): write error` e `butterfly_recv(): programmer is not responding`. Para removê-lo, liste os pacotes com `pnputil /enum-drivers` em um terminal de administrador e apague os da Arduino com `pnputil /delete-driver oemXX.inf /uninstall /force`. Reinstalar o Arduino IDE ou rodar "Install Drivers" no QMK Toolbox pode trazê-lo de volta.
 
 Atenção: kits de alguns vendedores (como o Sofle RGB da Keyhive e o Sofle v2 da splitkb/Aurora) usam alvos de firmware próprios (`sofle/keyhive`, `splitkb/aurora/sofle_v2`); use sempre o firmware indicado pelo vendedor do seu PCB. Um firmware `splitkb/aurora/sofle_v2` **não funciona** na PCB original v2.0.1: os pinos da matriz são outros.
+
+---
+
+← [Montagem](06-assembly.md) · [Índice](../README.md#documentação) · [Switches e keycaps](08-switches-keycaps.md) →

@@ -1,6 +1,5 @@
 # Impressão 3D
 
-
 > Parte da documentação de referência do projeto. Para marcar o que já foi feito, use `PROGRESS.md` (veja o [README](../README.md)).
 
 ## Case Pehmis
@@ -60,10 +59,17 @@ A placa de switches é a peça mais crítica: ela trava e alinha os switches, en
 7. **Faça o acabamento.** Remova o brim e passe um estilete nos cantos dos furos se algum switch entrar apertado.
 
 A placa impressa flexiona um pouco mais que a de FR4. Com os 10 espaçadores no lugar, isso quase não se nota na digitação, mas segure a placa ao puxar um switch com o extrator, para não forçar o socket hot-swap da PCB.
+
+Para as placas geradas por este repositório, os ajustes prontos para o Bambu Studio (PLA, camada de 0,12 mm, 4 paredes, 100% de preenchimento) estão em [`print-settings_bambu_PLA.txt`](../hardware/switch-plate/out/print-settings_bambu_PLA.txt); eles valem no lugar dos valores genéricos do passo 6.
+
+![Switches Brown encaixados na placa de switches impressa](../media/photos/06-switches-in-printed-case.jpg)
+
+*Placa de switches impressa em uso, com os switches encaixados.*
+
 ## Ordem de impressão sugerida
 
 1. **Tira de teste de tolerância** (`tolerance-test_14.0-14.2mm.3mf`): 1, 2 ou 3 marcadores = furo de 14,0 / 14,1 / 14,2 mm. Escolha o que prende o switch com um clique e firme.
-2. **Placa de switches** (2 cópias, tamanho de furo escolhido).
+2. **Placa de switches** (2 peças, tamanho de furo escolhido: uma normal e outra **espelhada no fatiador**, como no passo 5 acima; o espelhamento vale só para a placa, não para o case).
 3. **L-Top**: teste de encaixe com a placa de switches. Se algo não servir, corrija antes de gastar filamento no resto.
 4. **R-Top**: só depois de validar o L-Top. As metades **não são simétricas**: não espelhe uma para fazer a outra.
 5. **L-Bottom e R-Bottom**.
@@ -71,9 +77,12 @@ A placa impressa flexiona um pouco mais que a de FR4. Com os 10 espaçadores no 
 
    **Opção steampunk:** `hardware/knob-plum/knob-steampunk_bore-5.9mm.3mf` (imprima 2×). A cabeça é um cilindro de Ø15 (o Knob-X2 tem Ø17) com serrilhado diamante fino, friso em V, bordas chanfradas e topo liso ([prévia](../hardware/knob-plum/preview-steampunk.png)). A haste de Ø12,6, as alturas e todo o encaixe interno são idênticos aos do knob Plum de Ø5,9. Imprima com o topo na mesa, como vem no arquivo.
 
+   ![Prévia do knob steampunk](../hardware/knob-plum/preview-steampunk.png)
+
    Medidas do eixo Plum, lidas do desenho do anúncio do EC11 (Ø de fundo de dente e comprimento do serrilhado são estimativas do desenho): serrilhado com crista Ø6 (+0/−0,1 mm), fundo de dente ≈ Ø5,3 mm e fenda central de ≈ 1 mm, que deixa o eixo elástico. O L = 15 mm é contado a partir do corpo e inclui a rosca M7×0,75 de 5 mm, então o eixo sobra ≈ 10 mm acima da rosca (furo do knob: 10,8 mm de profundidade). Na tira, as marcas na borda indicam 1 a 6 furos, do menor (Ø5,5) ao maior (Ø6,0).
 7. **Pés de 8 mm em TPU**.
 8. **L-Wristrest e R-Wristrest**: por último e só se usar apoio de pulso (dependem dos ímãs 8×3 mm).
+9. **Keycaps de polegar 1.5u** (opcional): [`hardware/keycaps/keycap-1.5u.3mf`](../hardware/keycaps/keycap-1.5u.3mf), modelo de terceiros (Vostok Labs, CC BY-NC-ND 4.0; veja [NOTICE](../NOTICE.md)). Não edite o arquivo. Teste o encaixe da haste num switch antes de imprimir o par.
 
 ## Configurações recomendadas por peça
 
@@ -87,6 +96,7 @@ A placa impressa flexiona um pouco mais que a de FR4. Com os 10 espaçadores no 
 | Knob steampunk | PLA ou PETG (seda cobre/bronze combina) | 0,08–0,12 mm | 3 | 100% | Camada fina para definir o serrilhado. Topo na mesa: a textura da mesa fica no topo do knob (mesa lisa ou PEI texturizado, a gosto). |
 | Pés de 8 mm | TPU 95A | 0,2 mm | 2–3 | 100% | 20–30 mm/s, retração mínima ou desligada. |
 | L/R-Wristrest | PLA ou PETG | 0,2 mm | 3 | 15% | Os furos dos ímãs 8×3 mm podem precisar de ajuste de tolerância. |
+| Placa de switches | PLA | 0,12 mm | 4 | 100% | Ajustes do arquivo [`print-settings_bambu_PLA.txt`](../hardware/switch-plate/out/print-settings_bambu_PLA.txt). Sem suportes e sem brim. |
 
 ## Dicas gerais
 
@@ -104,3 +114,7 @@ A placa impressa flexiona um pouco mais que a de FR4. Com os 10 espaçadores no 
 - **Não servem para a v2:** os cases feitos para o Sofle RGB/v2.1, o Sofle Choc ou o Sofle Pico, cujos contornos são diferentes.
 
 A montagem das peças impressas está em [Montagem](06-assembly.md).
+
+---
+
+← [Pedido da PCB](04-pcb-order.md) · [Índice](../README.md#documentação) · [Montagem](06-assembly.md) →

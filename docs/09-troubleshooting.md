@@ -1,12 +1,12 @@
 # Solução de problemas
 
-
 > Parte da documentação de referência do projeto. Para marcar o que já foi feito, use `PROGRESS.md` (veja o [README](../README.md)).
 
 A maioria das falhas vem de solda fria, diodo invertido ou MCU na orientação errada — teste antes de fechar o case.
 
 | Sintoma | Causa provável | O que fazer |
 | --- | --- | --- |
+| Nada acende ao ligar o USB, ou o Pro Micro esquenta | Curto entre VCC e GND ou entre trilhas vizinhas (ponte de solda) | Desconecte na hora; com o multímetro em continuidade, procure o curto antes de ligar de novo |
 | Uma tecla não funciona | Solda fria no socket ou no diodo; diodo invertido | Refaça a solda; confira a listra do diodo contra a serigrafia; teste o socket com pinça |
 | Uma linha ou coluna inteira falha | Pino do MCU mal soldado ou socket com mau contato | Refaça a solda do pino correspondente; teste continuidade com multímetro |
 | Metade direita não responde | Cabo TRRS solto/defeituoso, jack mal soldado ou firmware diferente nas metades | Grave o mesmo firmware nas duas; troque o cabo; revise o jack |
@@ -23,3 +23,7 @@ A maioria das falhas vem de solda fria, diodo invertido ou MCU na orientação e
 | Teclado reinicia ou trava ao mexer no cabo | TRRS conectado com USB ligado | Sempre desconecte o USB antes de mexer no TRRS |
 
 Se o MCU for soldado direto e estiver com defeito, a troca é difícil — mais um motivo para usar sockets.
+
+---
+
+← [Switches e keycaps](08-switches-keycaps.md) · [Índice](../README.md#documentação) · [Referências e fontes](10-references.md) →

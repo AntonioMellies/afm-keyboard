@@ -1,9 +1,16 @@
 # Switches e keycaps
 
-
 > Parte da documentação de referência do projeto. Para marcar o que já foi feito, use `PROGRESS.md` (veja o [README](../README.md)).
 
 O Sofle v2 usa sockets hot-swap MX, então qualquer switch com haste MX serve e dá para trocar depois sem soldar. Por isso, a escolha dos switches é sobre sensação e som, não sobre compatibilidade. Já nos keycaps, o formato importa mais por causa do layout em colunas.
+
+## Neste projeto
+
+- **Switches:** MX táteis Brown de marca genérica (100 comprados; lotes genéricos variam, então teste alguns antes de montar).
+- **Keycaps:** kit XDAL de 96 teclas (perfil uniforme baixo, da família XDA), com legenda alaranjada sobre fundo azul-marinho.
+- **Polegares:** as duas teclas de 1.5u foram impressas em 3D com [`hardware/keycaps/keycap-1.5u.3mf`](../hardware/keycaps/keycap-1.5u.3mf), na cor do case.
+
+![Teclado pronto, com keycaps XDAL e polegares de 1.5u impressos](../media/photos/07-finished-keyboard.jpg)
 
 ## Tipos de switch
 
@@ -87,3 +94,7 @@ O perfil é o formato e a altura da tecla. Nos perfis **esculpidos**, cada filei
 - **Haste:** cruz MX ("Cherry MX compatível"). Keycaps para Choc ou de perfil baixo Choc não encaixam.
 - **Kits indicados:** kits "Ergo", "40%" ou "Ortho", que trazem muitas 1u e algumas 1.5u; kits XDA ou DSA em PBT (blank ou dye-sub) do AliExpress, com mais de 100 teclas; ou um kit Cherry completo (104 a 140 teclas), usando as 1u de cada fileira.
 - **Impressão 3D:** como você já imprime, existem modelos com haste MX prontos para imprimir, como o FormKey no MakerWorld. Imprima com o topo para cima e teste o encaixe da haste antes de imprimir o conjunto.
+
+---
+
+← [Firmware](07-firmware.md) · [Índice](../README.md#documentação) · [Solução de problemas](09-troubleshooting.md) →

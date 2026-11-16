@@ -29,3 +29,7 @@ A prévia do fabricante deve mostrar o Pro Micro com furos desencontrados entre 
 Topo e fundo **não** são fabricados em FR-4 neste projeto: são impressos em 3D ([Impressão 3D](05-3d-printing.md)).
 
 Mais informações: [Materiais](02-bom.md) e [Referências](10-references.md).
+
+---
+
+← [Ferramentas](03-tools.md) · [Índice](../README.md#documentação) · [Impressão 3D](05-3d-printing.md) →
