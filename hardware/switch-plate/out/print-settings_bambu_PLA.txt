@@ -1,0 +1,26 @@
+Placa de switches - ajustes no Bambu Studio (PLA)
+
+Base: perfil "Fine 0.12mm" do 0.4 mm + "Bambu PLA Basic" (ou PLA genérico).
+Não mexa em velocidades, aceleração, temperatura ou ventoinha: os padrões do
+perfil são rápidos e já corretos para PLA. Só altere o que está listado abaixo.
+
+Posição: deitada (como importada), 1,5 mm de altura. Sem suportes, sem brim.
+
+Qualidade
+  Altura de camada ........ 0,12 mm (~12 camadas)
+
+Resistência
+  Loops de parede ......... 4
+  Densidade de preench. ... 100%
+  Padrão de preenchimento . Retilíneo (Rectilinear)
+  Camadas sólidas topo/base padrão do perfil (com 100% de preenchimento tanto faz)
+
+Tempo
+  A placa tem ~8 cm3 de PLA. Com 0,12 mm e as velocidades padrão do Bambu
+  (sem reduzi-las à mão), leva mais que com 0,20 mm; confira a estimativa
+  no fatiador.
+
+Dicas para PLA
+  - PLA é mais quebradiço que PETG: mexa no encaixe dos switches com calma.
+  - Use filamento seco; PLA úmido enfraquece muito a peça.
+  - Se ainda ficar frágil, peça a versão de 2,0 mm.

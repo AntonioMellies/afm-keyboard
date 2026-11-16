@@ -1,0 +1,7 @@
+shapely
+trimesh
+manifold3d
+mapbox_earcut
+networkx
+lxml
+rtree
