@@ -35,6 +35,10 @@ Pelo QMK Toolbox: abra o `.hex`, MCU `ATmega32U4`, **Auto-Flash** ligado e reset
 
 ## Recompilar
 
+No QMK MSYS, na raiz do repositório, `make` faz tudo abaixo (copia o keymap, compila e atualiza `build/sofle_rev1_afm.hex`) e `make flash` grava. Use `make help` para ver os alvos; se o QMK não estiver em `~/qmk_firmware`, passe `QMK_HOME=...`.
+
+Passo a passo manual, se preferir:
+
 ```sh
 cp -r firmware/keymaps/afm "$QMK_HOME/keyboards/sofle/keymaps/afm"
 qmk compile -kb sofle/rev1 -km afm

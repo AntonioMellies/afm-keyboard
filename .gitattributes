@@ -1,0 +1,2 @@
+# make não aceita CRLF nas receitas; o core.autocrlf do Windows quebraria o Makefile.
+Makefile text eol=lf
